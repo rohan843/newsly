@@ -24,3 +24,4 @@ void main() {
 
 //TODO: add a privacy policy screen
 //TODO: improve icons in drawer
+//TODO: add fonts
