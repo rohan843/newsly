@@ -41,9 +41,9 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   fonts:
-#    - family:  MyFlutterApp
-#      fonts:
-#        - asset: lib\fonts\MyFlutterApp.ttf
+    - family: Courgette
+      fonts:
+        - asset: lib\fonts\Courgette-Regular.ttf
     - family:  CustomIcons
       fonts:
         - asset: lib\fonts\CustomIcons.ttf
@@ -58,6 +58,7 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - lib/images/background_header_2.1.jpg
+    - lib\images\opening_bg_1.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

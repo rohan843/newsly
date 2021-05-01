@@ -9,7 +9,7 @@ import 'package:news_app/screens/search.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/favourites',
+    initialRoute: '/opening_screen',
     routes: {
       '/loading': (context) => Loading(),
       '/home': (context) => Home(),
