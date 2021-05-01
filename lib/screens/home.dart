@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cupertino_icons/cupertino_icons.dart';
+import 'package:news_app/custom_icons.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class Home extends StatefulWidget {
   @override
