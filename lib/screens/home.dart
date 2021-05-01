@@ -1,4 +1,8 @@
+import 'dart:ui';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:cupertino_icons/cupertino_icons.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -26,20 +30,33 @@ class _HomeState extends State<Home> {
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            Stack(
-              children: [
-                DrawerHeader(
-                  child: Center(child: Text('Header Area')),
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage('https://media.nbcwashington.com/2021/02/globes-nom-2021.jpg?resize=1200,675'),
-                    fit: BoxFit.cover,
+            DrawerHeader(
+              child: Center(
+                  child: Column(
+                    children: [
+                      Icon(
+                          CupertinoIcons.news,
+                        color: Colors.white,
+                        size: 60,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'Navigate',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                    ],
                   ),
+              ),
+              decoration: BoxDecoration(
+                color: Colors.redAccent,
                 ),
               ),
-
-              ]
-            )
           ],
         ),
       ),
