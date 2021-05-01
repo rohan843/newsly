@@ -34,10 +34,14 @@ class _HomeState extends State<Home> {
               child: Center(
                   child: Column(
                     children: [
-                      Icon(
-                          CupertinoIcons.news,
-                        color: Colors.white,
-                        size: 60,
+                      CircleAvatar(
+                        backgroundColor: Color(0xFFBD3D3D),
+                        radius: 38,
+                        child: Icon(
+                            CupertinoIcons.news,
+                          color: Colors.white,
+                          size: 60,
+                        ),
                       ),
                       SizedBox(
                         height: 10,
@@ -45,7 +49,8 @@ class _HomeState extends State<Home> {
                       Text(
                         'Navigate',
                         style: TextStyle(
-                          color: Colors.white,
+                          letterSpacing: 1.3,
+                          color: Color(0xFFF6F6F6),
                           fontSize: 25,
                           fontWeight: FontWeight.w400,
                         ),
@@ -55,11 +60,169 @@ class _HomeState extends State<Home> {
               ),
               decoration: BoxDecoration(
                 color: Colors.redAccent,
+                image: DecorationImage(
+                  image: AssetImage('lib\\images\\background_header_2.1.jpg',),
+                  fit: BoxFit.cover,
+                ),
                 ),
               ),
             ListTile(
-              leading: Icon(CupertinoIcons.news_solid, color: Colors.redAccent,),
-              title: Text('Latest'),
+              tileColor: Colors.grey[300],
+              //selected: true,
+              onTap: () {},
+              leading: Icon(
+                CupertinoIcons.news_solid,
+                color: Colors.redAccent,
+                size: 29,
+              ),
+              title: Text(
+                  'Latest News',
+              style: TextStyle(
+                fontSize: 18.6,
+              ),
+              ),
+            ),
+            ListTile(
+              onTap: () {},
+              leading: Icon(
+                CupertinoIcons.square_favorites_fill,
+                color: Colors.blueGrey,
+                size: 25,
+              ),
+              title: Text(
+                'Categories',
+                style: TextStyle(
+                  fontSize: 16.6,
+                ),
+              ),
+            ),
+            ListTile(
+              onTap: () {},
+              leading: Icon(
+                CupertinoIcons.heart_circle_fill,
+                color: Colors.blueGrey,
+                size: 25,
+              ),
+              title: Text(
+                'Favourites',
+                style: TextStyle(
+                  fontSize: 16.6,
+                ),
+              ),
+            ),
+            Divider(
+              thickness: 1.5,
+              indent: 10,
+              endIndent: 10,
+            ),
+            SizedBox(height: 8,),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(15, 2, 0, 0),
+              child: Text(
+                  "Communicate",
+                style: TextStyle(
+                  fontSize: 15.1,
+                  color: Colors.grey[800],
+                  letterSpacing: 1.3,
+                ),
+              ),
+            ),
+            SizedBox(height: 8,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 7),
+                  child: TextButton.icon(
+                    label: Text(
+                      'Rate App!',
+                      style: TextStyle(
+                        fontSize: 14,
+                        letterSpacing: 1.2,
+                        color: Colors.grey,
+                      ),
+                    ),
+                    icon: Icon(
+                      CupertinoIcons.star,
+                      color: Colors.grey,
+                      size: 18.5,
+                    ),
+                    onPressed: () => {},
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 7),
+                  child: TextButton.icon(
+                    label: Text(
+                      'Share',
+                      style: TextStyle(
+                        fontSize: 14,
+                        letterSpacing: 1.2,
+                        color: Colors.grey,
+                      ),
+                    ),
+                    icon: Icon(
+                      Icons.share_sharp,
+                      color: Colors.grey,
+                      size: 18.5,
+                    ),
+                    onPressed: () => {},
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 7),
+                  child: TextButton.icon(
+                    label: Text(
+                      'About Us',
+                      style: TextStyle(
+                        fontSize: 14,
+                        letterSpacing: 1.2,
+                        color: Colors.grey,
+                      ),
+                    ),
+                    icon: Icon(
+                      CupertinoIcons.info_circle,
+                      color: Colors.grey,
+                      size: 18.5,
+                    ),
+                    onPressed: () => {},
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 7),
+                  child: TextButton.icon(
+                    label: Text(
+                        'Privacy Policy',
+                      style: TextStyle(
+                        fontSize: 14,
+                        letterSpacing: 1.2,
+                        color: Colors.grey,
+                      ),
+                    ),
+                    icon: Icon(
+                      CupertinoIcons.shield_lefthalf_fill,
+                      color: Colors.grey,
+                      size: 18.5,
+                    ),
+                    onPressed: () => {},
+                  ),
+                ),
+              ],
             ),
           ],
         ),

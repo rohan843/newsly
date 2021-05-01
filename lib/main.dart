@@ -17,3 +17,6 @@ void main() {
     },
   ));
 }
+
+//TODO: add a privacy policy screen
+//TODO: improve the drawer's communicate buttons, include text in button too
