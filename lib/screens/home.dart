@@ -57,6 +57,10 @@ class _HomeState extends State<Home> {
                 color: Colors.redAccent,
                 ),
               ),
+            ListTile(
+              leading: Icon(CupertinoIcons.news_solid, color: Colors.redAccent,),
+              title: Text('Latest'),
+            ),
           ],
         ),
       ),
