@@ -16,3 +16,4 @@ class _CurNewsState extends State<CurNews> {
     );
   }
 }
+
