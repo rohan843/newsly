@@ -393,5 +393,3 @@ class SearchResultsListView extends StatelessWidget {
     );
   }
 }
-
-//071ed1c3c00f413584d84eae9bb35283
